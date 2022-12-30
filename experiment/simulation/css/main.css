@@ -1,1 +1,10 @@
 /* You CSS goes in here */
+body
+{
+	font-family:"Lucida Grande","Lucida Sans Unicode",
+                "Lucida Sans", Verdana,Arial,sans-serif;
+	font-size:12px;
+	margin:0 auto;
+	padding:0;
+		
+}
