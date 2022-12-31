@@ -16,12 +16,15 @@ Position Analysis of a RRPR Linkage Using Complex Numbers
                                </p>
 
 Graphical Position Analysis of a RRPR inverted slider crank linkage
+
 <object width="900" height="700" data="./content/Gra_pos_ana_RRPR/index.html"></object>
 
 Finding extreme positions of a RRPR inverted slider crank linkage using complex numbers
+
 <object width="900" height="700" data="./content/Cmplx_lim_pos_ana_RRPR_Grashofian_inverted_slider_crank/index.html"></object></p>
 
 Finding extreme positions of a RRPR inverted slider crank linkage graphically
+
 <p><object width="900" height="700" data="./content/Gra_lim_pos_ana_RRPR_Grashofian_inverted_slider_crank/index.html"></object></p>
 
 
