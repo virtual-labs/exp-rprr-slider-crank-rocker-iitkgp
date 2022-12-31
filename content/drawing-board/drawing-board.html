@@ -1,0 +1,38 @@
+<!-- 
+Document     : drawing-board.html
+Created on   : 16 Jun, 2016, 11:37:11 AM
+Author       : Pabitra K Jana
+Organization : IIT Kharagpur
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Engineering Drawing Board</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/axis.js"></script>
+        <script src="js/scene.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div id="canvas2d-wrapper">
+                <div id="canvas2d-title">Engineering Drawing Board</div>            
+                <div id="canvas2d-view"></div>           
+            </div>
+
+            <div id="controller-wrapper">
+                <div id="controller-title">Controller</div>
+                <div id="controller-view">
+                    <input id="slider1" type="range" min="-360" max="360" step="10" value="0" oninput="sliderChange()">
+                    <input id="rangeValue1" type="text" size="2" value="0">
+                    <input type="checkbox" id="axis"/>Axis
+                    <input type="checkbox" id="grid"/>Grid
+                    <br/>
+                    Mouse Position:<label id="mouse-pos"></label>
+                    <br/>
+                    Pick Color:<input type="color" id="html5colorpicker" value="#ff0000" style="width:50px;">
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>

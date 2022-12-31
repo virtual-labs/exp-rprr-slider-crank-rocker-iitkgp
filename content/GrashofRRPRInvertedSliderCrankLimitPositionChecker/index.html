@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/javascript">
+function checkGrashof() {
+
+    var l1 = document.getElementById("ground").value;
+    var l2 = document.getElementById("crank").value;
+    var l3 = document.getElementById("coupler_offset").value;
+    var l4 = document.getElementById("slider_offset").value;
+    var s41 = document.getElementById("slider_limit_1").value;
+    var s42 = document.getElementById("slider_limit_2").value;
+       
+
+        var s41_  = Math.sqrt( (l1-l2)*(l1-l2)-(l3-l4)*(l3-l4));
+        var s42_  = Math.sqrt( (l1+l2)*(l1+l2)-(l3-l4)*(l3-l4));
+
+		err_s41 = (Math.abs((s41 - s41_) / s41_) * 100);
+		err_s42 = (Math.abs((s42 - s42_) / s42_) * 100);
+		document.getElementById("error_s41").innerHTML = "Slider Limit 1 = " + s41_ + "          ,     Error = "+err_s41+" %";
+		document.getElementById("error_s42").innerHTML = "Slider Limit 2 = " + s42_ + "          ,     Error = "+err_s42+" %";
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style2 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+<body>
+<label></label>
+<label><span class="style1">Validate Graphical Analysis for Limits of Slider</span><span class="style2"><br />
+Link Length 1 (Ground) :
+<input id="ground" type="number">
+<br />
+Link Length 2 (Crank) :
+<input type="number" id="crank" />
+<br />
+</span></label>
+<span class="style2">
+<label>Link Length 3 (Coupler offset) :
+<input type="number" id="coupler_offset" />
+</label>
+<label><br />
+Link Length 4 (Slider offset) :
+<input type="number" id="slider_offset" />
+</label>
+<label><br />
+Slider displacement at theta 2 = 0 :
+<input type="number" id="slider_limit_1" />
+</label>
+<label><br />
+Slider displacement at theta 2 = pi :
+<input type="number" id="slider_limit_2" />
+</label>
+<br />
+<label></label><label></label>
+<input name="submit" type="submit" id="Submit" onclick="checkGrashof()" value="Check"/>
+</span>
+<p id="error_s41"></p>
+<p id="error_s42"></p>
+</body>
+</html>
