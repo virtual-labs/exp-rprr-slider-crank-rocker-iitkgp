@@ -25,6 +25,7 @@ Finding extreme positions of a RRPR inverted slider crank linkage using complex 
 
 Finding extreme positions of a RRPR inverted slider crank linkage graphically
 
+
 <p><object width="900" height="700" data="./content/Gra_lim_pos_ana_RRPR_Grashofian_inverted_slider_crank/index.html"></object></p>
 
 
